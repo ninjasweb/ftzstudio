@@ -9,6 +9,7 @@ img {
 
 body {
 	background-image: url('imagen.jpg');
+    overflow: hidden;
 }
 
 .container {
@@ -16,9 +17,9 @@ body {
     margin: 2rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    height: 80vh;
 
 }
 
@@ -34,6 +35,10 @@ body {
 
 .papelera img {
     cursor: move;
+}
+
+.modal {
+    display: none;
 }
 
 

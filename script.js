@@ -10,5 +10,22 @@ $(function(){
      $("#draggable3").draggable();
 });
 
-document.getElementById("modal").style.display = "none";
+// Función aparecer ventana
+function abrirVentana() {
+    var x = document.getElementById("modal");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function myFunction(){
+var x = document.getElementById("modal");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 
