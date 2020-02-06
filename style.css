@@ -18,7 +18,7 @@ body {
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    height: 80vh;
+    height: 100vh;
 
 }
 
@@ -48,12 +48,22 @@ body {
     z-index: 999;
 }
 
+.folder p {
+    color: #fff;
+}
+
+/* PAPELERA */
+
 .papelera {
     grid-area: 6 / 11 / 7 / 12;
 }
 
 .papelera img {
     cursor: move;
+}
+
+.papelera p {
+    color: #fff;
 }
 
 .modal {
