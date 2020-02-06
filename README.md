@@ -1,2 +1,0 @@
-# ftzstudio
-FTZ Web
