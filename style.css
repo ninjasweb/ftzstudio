@@ -14,7 +14,6 @@ body {
 
 .container {
     background-color: rgba(255, 0, 0, 0.2);
-    margin: 2rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 0px;
@@ -23,8 +22,28 @@ body {
 
 }
 
+/* Header */
+.header {
+    width: 100vw;
+    height: 30px;
+    background-color: #ccc;
+    display: inline-block;
+}
+
+.header .finder {
+    font-weight: bold;
+    font-family: arial;
+    float: left;
+    margin: auto;
+}
+
+.header img {
+    max-height: 100%;
+    float: right;
+}
+
 .folder img {
-	width: 6rem;
+	width: 6em;
 	cursor: move;
     z-index: 999;
 }
