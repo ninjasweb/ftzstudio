@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<title>FTZ Studio</title>
@@ -7,12 +7,30 @@
 	<meta name="description" content="Somos un pequeño estudio haciendo grandes cosas">
 	<link rel="stylesheet" href="./style.css">
 	<link rel="stylesheet" href="./reset.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 </head>
 <body>
-	<div class="main">
-		<img src="img/folder.png" alt="" class="folder">
-		<img src="img/folder.png" alt="" class="folder">
-	</div>
+  <!-- Modal-->
+  <div class="modal" style="background: #fff; width: 200px;" id="#modal">    
+    <h1>Mi Modal</h1>
+  </div>
+  <!-- Fin Modal -->
+  <div class="container">
+      <!-- Folder #1 -->
+      <div class="folder">
+		      <img src="img/folder.png" alt="" class="folder" id="draggable">
+      </div>
+      <!-- Folder #2 -->
+      <div class="folder">
+          <img src="img/folder.png" alt="" class="folder" id="draggable2">
+      </div>
+      <!-- Papelera -->
+      <div class="papelera">
+        <img src="img/paper.png" alt="" style="width: 6rem;" id="draggable3">
+      </div>
+
+  </div>
 
 <script  src="./script.js"></script>
 </body>
