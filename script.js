@@ -10,22 +10,28 @@ $(function(){
      $("#draggable3").draggable();
 });
 
-// Función aparecer ventana
-function abrirVentana() {
-    var x = document.getElementById("modal");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
+$(function(){
+     $(".modal").draggable();
+});
+
+
+//Hora dinámica
+new Date($.now());
+
+var dt = new Date();
+var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+
+window.onload = function(){
+    document.getElementById('hora').innerHTML = time;
 }
 
-function myFunction(){
-var x = document.getElementById("modal");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
+// Abrir modal
+
+function showDiv(){
+    document.getElementById('modal').style.display = "block";
 }
 
+// Cerrar Modal
+function closeDiv(){
+    document.getElementById('modal').style.display = "none";
+}

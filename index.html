@@ -13,21 +13,22 @@
 <body>
       <!-- Header -->
     <div class="header">
-      <p class="finder">finder</p>
+      <p class="lf_header finder">Finder</p>
+      <p class="lf_header">File</p>
+      <p class="lf_header">Edit</p>
+      <p class="lf_header">View</p>
+      <p class="rg_header" id="hora"></p>
       <img src="img/battery.png">
       <img src="img/wifi.png">
     </div>
-    <!-- Header -->
+    <!-- Fin  Header -->
+
+  <!-- Container -->
   <div class="container">
-  <!-- Modal-->
-  <div class="modal" style="background: #fff;" id="#modal">    
-    <h1>Mi Modal</h1>
-  </div>
-  <!-- Fin Modal -->
 
       <!-- Folder #1 -->
       <div class="folder" id="draggable">
-		      <img src="img/folder.png" alt="" class="folder" ondblclick="myFunction()">
+		      <img src="img/folder.png" alt="" class="folder" ondblclick="showDiv()">
           <p>Nuestro Equipo</p>
       </div>
       <!-- Folder #2 -->
@@ -35,6 +36,14 @@
           <img src="img/folder.png" alt="" class="folder">
           <p>Nuestra Empresa</p>
       </div>
+        <!-- Modal-->
+        <div class="modal" id="modal">
+          <div class="modal_header">
+            <button onclick="closeDiv()"></button>
+          </div>    
+          <h1>Modal Nuestro Equipo</h1>
+        </div>
+        <!-- Fin Modal -->
       <!-- Papelera -->
       <div class="papelera"  id="draggable3">
         <img src="img/paper.png">
