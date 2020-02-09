@@ -1,3 +1,4 @@
+// Funciones Draggable
 $(function(){
      $("#draggable").draggable();
 });
@@ -25,12 +26,12 @@ window.onload = function(){
     document.getElementById('hora').innerHTML = time;
 }
 
-// Abrir modal
+//Modal
 
+// Abrir modal
 function showDiv(){
     document.getElementById('modal').style.display = "block";
 }
-
 // Cerrar Modal
 function closeDiv(){
     document.getElementById('modal').style.display = "none";
